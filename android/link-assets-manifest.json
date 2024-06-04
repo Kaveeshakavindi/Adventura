@@ -2,28 +2,48 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/Alatsi.ttf",
+      "path": "assets/fonts/Alatsi-Regular.ttf",
       "sha1": "687948f521ab8e6d03bf8e041e25b9d17e0184f5"
     },
     {
-      "path": "assets/fonts/AntDesign.ttf",
-      "sha1": "4e77868439280fb434d4697c7b911271406c81f3"
+      "path": "assets/fonts/Lato-Black.ttf",
+      "sha1": "a001eb827743636e04f8efa7d4aeedf0541c46ac"
     },
     {
-      "path": "assets/fonts/Feather.ttf",
-      "sha1": "e6604258b1ced5efd51360875d782fca65381d47"
+      "path": "assets/fonts/Lato-BlackItalic.ttf",
+      "sha1": "b490ec02c69bb74f5b4f487c59e984891c8da71c"
     },
     {
-      "path": "assets/fonts/FontAwesome.ttf",
-      "sha1": "13b1eab65a983c7a73bc7997c479d66943f7c6cb"
+      "path": "assets/fonts/Lato-Bold.ttf",
+      "sha1": "542498221d97bee5bdbccf86ee8890bf8e8005c9"
     },
     {
-      "path": "assets/fonts/Fontisto.ttf",
-      "sha1": "c090a3ec96a3f1bb9b615c2f3f204ce0dcdcdbc3"
+      "path": "assets/fonts/Lato-BoldItalic.ttf",
+      "sha1": "6bf491e78e16d3b9c8a55752e1bd658e15ed7f19"
     },
     {
-      "path": "assets/fonts/Tilt Neon.ttf",
-      "sha1": "cc1463b48374c4a6c85bb8bc713b2e5b76b70b29"
+      "path": "assets/fonts/Lato-Italic.ttf",
+      "sha1": "190187b720ec2f2ff2e4281237e301000e09673f"
+    },
+    {
+      "path": "assets/fonts/Lato-Light.ttf",
+      "sha1": "ad0d178564445a535b15d417f5b18019923d3bab"
+    },
+    {
+      "path": "assets/fonts/Lato-LightItalic.ttf",
+      "sha1": "34388d9a3b64380c9f08d424d0adaa88a0d1650a"
+    },
+    {
+      "path": "assets/fonts/Lato-Regular.ttf",
+      "sha1": "e923c72eda5e50a87e18ff5c71e9ef4b3b6455a3"
+    },
+    {
+      "path": "assets/fonts/Lato-Thin.ttf",
+      "sha1": "07290446bee3f81ce501a3c3dbfde6097c70ca15"
+    },
+    {
+      "path": "assets/fonts/Lato-ThinItalic.ttf",
+      "sha1": "ff4a1a9fe2dcc41d993f4c5067a3baa1c456ff97"
     }
   ]
 }

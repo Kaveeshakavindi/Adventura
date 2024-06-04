@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor: 'white',
         margin: 30,
-    
+        height: 400
     },
     image: {
         flex: 1,
@@ -53,8 +53,8 @@ const styles = StyleSheet.create({
     },
     rating: {
         color: 'black',
-        fontWeight: 'bold',
-        fontSize: 12
+        fontSize: 12,
+        fontFamily:'Lato-Bold',
     },
     textContainer: {
         backgroundColor: 'white',
@@ -66,17 +66,17 @@ const styles = StyleSheet.create({
         width: 245,
         height: 69,
         borderRadius: 13,
-     
         zIndex:1
     },
     title: {
         color: 'black',
         fontSize: 16,
-        fontWeight: 'bold'
+        fontFamily:'Lato-Bold',
     },
     subTitle: {
         color: 'grey',
         fontSize: 12,
+        fontFamily:'Lato-Regular',
     }
 });
 

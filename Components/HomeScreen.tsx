@@ -8,6 +8,7 @@ import LakePlaces from './MenuItems/LakePlaces';
 import MountainPlaces from './MenuItems/MountainPlaces';
 import WaterfallPlaces from './MenuItems/WaterfallPlaces';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import SearchTabNavigator from './SearchTabNavigator';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -25,35 +26,29 @@ const HomeScreen = ({ navigation }: { navigation: any }) => {
   }
   return (
     <SafeAreaView style={styles.container}>
+
       <FirstRow />
-      <Tab.Navigator
-        screenOptions={{
-          tabBarLabelStyle: { 
-            fontSize: 12 ,
-            fontWeight:'bold',
-            textTransform: 'none' 
-          },
-          tabBarStyle:{
-            elevation:0
-          },
-          tabBarIndicator: () => (
-            <View
-              style={{
-                width: 100,
-                height: 2,
-                marginLeft: 0,
-              }}>
-                </View>
-          ),
-        }}
-      >
-        <Tab.Screen name="Beach" component={BeachPlaces} />
-        <Tab.Screen name="Lake" component={LakePlaces} />
-        <Tab.Screen name="Mountain" component={MountainPlaces} />
-        <Tab.Screen name="Waterfall" component={WaterfallPlaces} />
-      </Tab.Navigator>
+      <SearchTabNavigator/>
       <View>
         <Text style={styles.topic2}>Top Destinations</Text>
+        <View style={{ flexDirection: 'row' }}>
+          <View style={styles.topDestinationContainer}>
+            <Image source={require('../assets/images/tropical-beach.png')}
+              style={styles.topDestinationImage} />
+            <View style={styles.topDestTextContainer}>
+              <Text style={styles.topDestTopic}>Kanifushi</Text>
+              <Text style={styles.topDestSubTopic}>Maldives</Text>
+            </View>
+          </View>
+          <View style={styles.topDestinationContainer}>
+            <Image source={require('../assets/images/beach2.png')}
+              style={styles.topDestinationImage} />
+            <View style={styles.topDestTextContainer}>
+              <Text style={styles.topDestTopic}>Kanifushi</Text>
+              <Text style={styles.topDestSubTopic}>Maldives</Text>
+            </View>
+          </View>
+        </View>
       </View>
     </SafeAreaView>
   );
@@ -67,22 +62,42 @@ const styles = StyleSheet.create({
     padding: 20,
     color: 'black',
     fontSize: 30,
-    fontWeight: 'bold'
+    fontFamily:'Lato-Black',
   },
-  menu: {
-  },
-  menuItem: {
+  topic2: {
     color: 'black',
-    fontSize: 17,
-    fontWeight: 'bold',
-    paddingLeft: 60,
-    paddingTop: 20
+    fontSize: 22,
+    padding: 30,
+    fontFamily:'Lato-Black',
   },
-  topic2:{
+  topDestinationContainer: {
+    flexDirection: 'row',
+    backgroundColor: '#F5F5F5',
+    width: 150,
+    borderRadius: 15,
+    alignItems: 'center',
+    marginLeft: 30,
+    marginBottom: 10
+  },
+  topDestinationImage: {
+    width: 66,
+    height: 73,
+    borderRadius: 15
+  },
+  topDestTopic: {
     color: 'black',
-    fontWeight:'bold',
-    fontSize:22,
-    padding: 25
+    fontSize: 12,
+    fontFamily:'Lato-Bold',
+  },
+  topDestSubTopic: {
+    color: 'black',
+    opacity: 0.4,
+    fontSize: 10,
+    fontFamily:'Lato-Regular',
+  },
+  topDestTextContainer: {
+    paddingLeft: 10
+
   }
 })
 export default HomeScreen;

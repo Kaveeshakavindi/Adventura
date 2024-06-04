@@ -6,7 +6,10 @@ import Button from './Button';
 const WelcomeScreen = ({ navigation }: { navigation: any }) => {
   
   const handleButtonPress = () => {
-    navigation.navigate('Home');
+    navigation.navigate('AppNavigator');
+  };
+  const handleButtonPress1 = () => {
+    navigation.navigate('Login');
   };
 
 
@@ -18,7 +21,7 @@ const WelcomeScreen = ({ navigation }: { navigation: any }) => {
         <Text style={styles.text1}>Book your trip with</Text>
         <Text style={styles.logo}>ADVENTURA</Text>
         <Text style={styles.text2}>Let's make the life so a life.</Text>
-        <Button title="Get Started" onPress={handleButtonPress} />
+        <Button title="Log In" onPress={handleButtonPress1} />
       </ImageBackground>
     </SafeAreaView>
   );
@@ -40,10 +43,11 @@ const styles = StyleSheet.create({
     fontSize: 15,
     textAlign: 'center',
     opacity: 0.7,
+    fontFamily:'Lato-Regular'
   },
   logo:{
     color: 'white',
-    fontFamily: 'Alatsi',
+    fontFamily: 'Alatsi-Regular',
     fontSize: 40,
     textAlign: 'center'
   },
@@ -53,6 +57,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     opacity: 0.7,
     paddingTop: 50,
+    marginBottom:100,
+    fontFamily:'Lato-Regular',
+  
   },
   
 

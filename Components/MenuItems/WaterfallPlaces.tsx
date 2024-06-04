@@ -1,11 +1,24 @@
 import React from 'react';
-import { Text} from 'react-native';
+import { ScrollView, StyleSheet, Text} from 'react-native';
+import { TOP_PLACES } from '../../data';
+import TopPlacesCarousel from '../TopPlacesCarousel';
 
-interface props {}
 
-const WaterfallPlaces: React.FC<props> = (): JSX.Element => (
-    <Text>
-        Waterfall
-    </Text>
-);
+
+const WaterfallPlaces = () => {
+
+    return (
+      <ScrollView horizontal style={styles.container} showsHorizontalScrollIndicator={false}>
+        <TopPlacesCarousel places={TOP_PLACES} ></TopPlacesCarousel>
+      </ScrollView>
+    );
+  }
+  const styles = StyleSheet.create({
+    container: {
+  
+      backgroundColor: 'white',
+      
+    },
+  
+  });
 export default WaterfallPlaces;

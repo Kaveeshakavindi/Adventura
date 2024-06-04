@@ -20,15 +20,17 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     padding:20,
     borderRadius: 20,
-    marginTop: 150,
-    alignItems: 'center',
+    marginTop: 10,
+    alignItems: 'center', 
     width:300,
-    
+    elevation:5,
   },
   text: {
     color: 'white',
     fontSize: 16,
-    textAlign: 'center'  },
+    textAlign: 'center',
+    fontFamily:'Lato-Regular'
+  },
 });
 
 export default Button;
